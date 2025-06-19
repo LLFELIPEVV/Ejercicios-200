@@ -1,3 +1,5 @@
+# Ejercicio 2: Modelo de Machine Learning para aprender a multiplicar dos números
+
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error
