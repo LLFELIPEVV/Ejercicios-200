@@ -1,6 +1,4 @@
 # 🧠 Ejercicio 21: Clasificación de dígitos escritos a mano con Red Neuronal MLP
-
-import numpy as np
 import matplotlib.pyplot as plt
 
 from sklearn.datasets import load_digits
@@ -12,8 +10,9 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 # 1️⃣ Cargar el dataset de dígitos (cada imagen es de 8x8 píxeles, aplanada en un vector de 64 dimensiones)
 digits = load_digits()
 X = digits.data  # Datos de entrada (imagen aplanada)
+print(X)
 y = digits.target  # Etiquetas (dígitos del 0 al 9)
-
+print(y)
 # 2️⃣ Escalar los valores de píxeles a [0, 1] — importante para redes neuronales
 scaler = MinMaxScaler()
 X_scaled = scaler.fit_transform(X)
