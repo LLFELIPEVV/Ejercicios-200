@@ -83,7 +83,7 @@ model.summary()
 # -----------------------------
 
 model.fit(
-    X_train_seq, y_train, epochs=5, batch_size=32, validation_split=0.1, verbose=2
+    X_train_seq, y_train, epochs=5, batch_size=32, validation_split=0.1, verbose=1
 )
 
 # -----------------------------
