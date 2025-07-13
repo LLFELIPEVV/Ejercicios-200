@@ -103,7 +103,7 @@ plt.scatter(reduced[:, 0], reduced[:, 1], alpha=0.5)
 for i, word in enumerate(selected_vocab):
     plt.annotate(word, (reduced[i, 0], reduced[i, 1]), fontsize=8, alpha=0.7)
 
-plt.title("📌 Proyección 2D de Embeddings Entrenados desde Cero")
+plt.title("Proyección 2D de Embeddings Entrenados desde Cero")
 plt.grid(True)
 plt.tight_layout()
 plt.show()
